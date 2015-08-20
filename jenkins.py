@@ -11,3 +11,4 @@ elif cmd == 'restart':
   os.system('java -Dfile.encoding=UTF-8 -Dhudson.DNSMultiCast.disabled=true -jar /opt/apps/jenkins/jenkins.war stop')
 else:
   print 'nothing happen';
+ prd(d);
