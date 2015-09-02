@@ -38,7 +38,7 @@ db = MySQLdb.connect(host="10.10.85.62", # your host, usually localhost
                       db="cyanstat",
                       port=3306) # name of the data base
 cur = db.cursor()
-sql = "INSERT INTO labs_stat (date,type,uri,ms_200,ms_500,ms_1000,ms_2000,ms_5000,req_count) VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+sql = "INSERT IGNORE INTO labs_stat (date,type,uri,ms_200,ms_500,ms_1000,ms_2000,ms_5000,req_count) VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s)"
 for key in dic.keys():
     one = dic[key];
     param = [one.date,one.type,one.uri,one.ms_200,one.ms_500,one.ms_1000,one.ms_2000,one.ms_5000,one.req_count];
