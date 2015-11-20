@@ -6,5 +6,5 @@ target
 .idea
 .mymetadata
 .metadata
-.pyc
+*.pyc
 RemoteSystemsTempFiles
