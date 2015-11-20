@@ -8,4 +8,3 @@ class DateUtils:
     @staticmethod
     def oneHourBefore():
         return int(strftime("%Y%m%d%H", localtime())) - 1;
-print DateUtils.yesterday();
